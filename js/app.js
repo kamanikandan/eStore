@@ -43,7 +43,7 @@ function fetchCategories() {
 }
 
 async function fetchBooks() {
-  const results = await fetch('../data/product.json');
+  const results = await fetch('data/product.json');
   const { products } = await results.json();
   books = products;
   fetchCategories();
